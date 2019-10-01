@@ -20,6 +20,6 @@ namespace Store.API
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .UseUrls("http://localhost:5000");
+                .UseUrls("http://localhost:5005");
     }
 }
