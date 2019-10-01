@@ -58,7 +58,7 @@ namespace Store.AUTH.Services
             if (result.Succeeded)
             {
                 await _signInManager.SignInAsync(user, false);
-                await _userManager.AddToRoleAsync(user, "manager");
+                await _userManager.AddToRoleAsync(user, "customer");
                 return await _jwt.GenerateJwt(user);
             }
 
